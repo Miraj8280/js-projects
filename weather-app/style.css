@@ -1,55 +1,74 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 body {
-    background: #222;
-}
-
-.card {
-    width: 90%;
-    max-width: 470px;
-    background: linear-gradient(135deg, #00feba, #5b548a);
-    color: #fff;
-    margin: 100px auto 0;
-    padding: 40px 35px;
-    border-radius: 15px;
-    text-align: center;
-}
-
-.search {
-    width: 100%;
+    height: 100vh;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
+    background: #06283D;
 }
 
-.search input {
-    border: 0;
-    outline: 0;
-    background: #ebfffc;
-    color: #555;
-    padding: 10px 25px;
-    height: 50px;
-    border-radius: 15px;
-    flex: 1;
-    margin-right: 16px;
-    font-size: 18px;
+.container{
+    position: relative;
+    width: 400px;
+    height: 105px;
+    background: #fff;
+    padding: 28px 32px;
+    overflow: hidden;
+    border-radius: 18px;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.6s ease-out;
 }
 
-.search button {
-    border: 0;
-    outline: 0;
-    background: #ebfffc;
+.search-box{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-box input{
+    color: #06283D;
+    width: 80%;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-left: 32px;
+}
+
+.search-box input::placeholder{
+    font-size: 20px;
+    font-weight: 500;
+    color: #06283D;
+    text-transform: capitalize;
+}
+
+.search-box button{
+    cursor: pointer;
     width: 50px;
     height: 50px;
+    color: #06283D;
+    background: #dff6ff;
     border-radius: 50%;
-    cursor: pointer;
+    font-size: 22px;
+    transition: 0.4s ease;
 }
 
-.search img {
-    width: 20px;
+.search-box button:hover{
+    color: #fff;
+    background: #06283D;
+}
+
+.search-box i{
+    position: absolute;
+    color: #06283D;
+    font-size: 28px;
 }
