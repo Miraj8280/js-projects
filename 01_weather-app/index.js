@@ -12,7 +12,7 @@ const pageNotFound = document.querySelector(".not-found");
 --------------------------------------*/
 search.addEventListener("click", () => {
   // openWeatherMap API Key
-  const APIKey = "d50fd32cea9cee266e2ed5d42e0467b4";
+  const APIKey = "your_api_key";
 
   // Extracting city name from input field
   const city = document.querySelector(".search-box input").value;
